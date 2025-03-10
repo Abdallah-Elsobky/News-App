@@ -1,0 +1,23 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NewsV1" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black_primary</item>
+
+
+
+        <item name="colorSecondary">@color/black_primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+
+
+        <item name="colorPrimaryVariant">@color/PrimaryVariant</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondaryVariant">@color/black_primary</item>
+        <item name="colorTertiary">#FF00FF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black_primary</item>
+    </style>
+
+    <style name="Theme.NewsV1" parent="Base.Theme.NewsV1" />
+</resources>
