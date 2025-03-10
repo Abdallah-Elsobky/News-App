@@ -1,6 +1,7 @@
 package com.example.newsv1.ui
 
 import android.os.Bundle
+import android.util.TypedValue
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -25,6 +26,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navigation() {
+        val typedValue = TypedValue()
+        theme.resolveAttribute(androidx.appcompat.R.attr.colorPrimary, typedValue, true)
+        val color = typedValue.data
+
+        binding.toolbar.toolbar.navigationIcon?.mutate()?.setTint(color)
+
+
         setSupportActionBar(binding.toolbar.toolbar)
 
         navController = findNavController(R.id.fragmentContainerView)
